@@ -2,7 +2,7 @@
 ### A Time Series Analysis of Quit Rates in Accommodation and Food Services
 
 ## Overview
-The accommodation and food services sector is widely associated with elevated employee turnover. This project examines monthly quit rates in the sector from January 2016 through March 2026 using data from the U.S. Bureau of Labor Statistics Job Openings and Labor Turnover Survey. The central question is whether the post-pandemic surge in voluntary separations has fully unwound, or whether elevated turnover remains a structural feature of the industry.
+The accommodation and food services sector is widely associated with elevated employee turnover. This project examines monthly quit rates in the sector from January 2016 through April 2026 using data from the U.S. Bureau of Labor Statistics Job Openings and Labor Turnover Survey. The central question is whether the post-pandemic surge in voluntary separations has fully unwound, or whether elevated turnover remains a structural feature of the industry.
 
 This analysis serves as a companion to *Up or On the Rocks?*, which examines
 employment levels in the same sector over the same period using BLS Current
@@ -11,7 +11,7 @@ Employment Statistics data.
 ## Data Source
 - **Series:** JTS720000000000000QUR -- Quits Rate, Accommodation and Food Services (NAICS 72)
 - **Provider:** U.S. Bureau of Labor Statistics, Job Openings and Labor Turnover Survey (JOLTS)
-- **Period:** January 2016 – March 2026
+- **Period:** January 2016 – April 2026
 - **Frequency:** Monthly
 - **Units:** Quits rate (percentage of employment)
 - **Access:** BLS Public Data API v2
@@ -68,7 +68,7 @@ a seasonal order.
   falling back sharply, behavior not captured by models trained on pre-2025 data.
 - The series shows negligible seasonal structure, in contrast to the strong summer employment
   peaks observed in the same sector.
-- Actual January through March 2026 quit rates (4.7%, 4.1%, and 4.3%) fell within the ARIMA 80%
+- Actual January through April 2026 quit rates (4.7%, 4.1%, 4.2%, 4.0%) fell within the ARIMA 80%
   confidence interval, suggesting the model's uncertainty range is appropriately calibrated even
   if the point forecast understates near-term volatility.
   
