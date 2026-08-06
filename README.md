@@ -2,7 +2,7 @@
 ### A Time Series Analysis of Quit Rates in Accommodation and Food Services
 
 ## Overview
-The accommodation and food services sector is widely associated with elevated employee turnover. This project examines monthly quit rates in the sector from January 2016 through May 2026 using data from the U.S. Bureau of Labor Statistics Job Openings and Labor Turnover Survey. The central question is whether the post-pandemic surge in voluntary separations has fully unwound, or whether elevated turnover remains a structural feature of the industry.
+The accommodation and food services sector is widely associated with elevated employee turnover. This project examines monthly quit rates in the sector from January 2016 through June 2026 using data from the U.S. Bureau of Labor Statistics Job Openings and Labor Turnover Survey. The central question is whether the post-pandemic surge in voluntary separations has fully unwound, or whether elevated turnover remains a structural feature of the industry.
 
 This analysis serves as a companion to *Up or On the Rocks?*, which examines
 employment levels in the same sector over the same period using BLS Current
@@ -11,7 +11,7 @@ Employment Statistics data.
 ## Data Source
 - **Series:** JTS720000000000000QUR -- Quits Rate, Accommodation and Food Services (NAICS 72)
 - **Provider:** U.S. Bureau of Labor Statistics, Job Openings and Labor Turnover Survey (JOLTS)
-- **Period:** January 2016 – May 2026
+- **Period:** January 2016 – June 2026
 - **Frequency:** Monthly
 - **Units:** Quits rate (percentage of employment)
 - **Access:** BLS Public Data API v2
@@ -68,10 +68,15 @@ a seasonal order.
   falling back sharply, behavior not captured by models trained on pre-2025 data.
 - The series shows negligible seasonal structure, in contrast to the strong summer employment
   peaks observed in the same sector.
-- January through May 2026 quit rates ranged from 4.0% to 4.7%, all falling within the ARIMA 80%
+- January through June 2026 quit rates ranged from 4.0% to 4.7%, all falling within the ARIMA 80%
   confidence interval. The model's persistence forecast captures the general level but has
   consistently understated month-to-month variability. The forecast remains appropriately
   calibrated to the actual volatility observed in recent years.
+- In June 2026, accommodation and food services employment rose to 12.64 million, adding 74,600
+  jobs from May, while quit rates simultaneously increased to 4.5%. The concurrent rise in both
+  employment and voluntary separations suggests a labor market where job availability and worker
+  confidence are supporting both hiring and exits, consistent with the employment recovery
+  documented in the companion analysis. 
   
 ## Tools and Libraries
 - **Python** -- pandas, numpy, statsmodels, scikit-learn, plotly, seaborn
